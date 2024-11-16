@@ -14,6 +14,11 @@ function generateSignature() {
     const phone = document.getElementById('phone').value;
     const email = document.getElementById('email').value;
 
+    let contactHTML = '';
+    if (phone) {
+        contactHTML = `${phone} | `;
+    }
+
     const signatureHTML = `
         <div class="signature">
             <div class="name-title"><span class="name">${name}</span> | ${title}</div>
@@ -21,7 +26,7 @@ function generateSignature() {
             <div class="pronouns">${pronouns}</div>
             <div class="spacer"></div>
             <div class="address">901 12th Avenue, Seattle, WA 98122-1090</div>
-            <div class="phone">Office: ${phone} | <a href="mailto:${email}">${email}</a></div>
+            <div class="contact" style="font-size: 10px;">${contactHTML}<a href="mailto:${email}">${email}</a></div>
         </div>
     `;
 
