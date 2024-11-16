@@ -13,7 +13,7 @@ function generateSignature() {
             <div class="pronouns">${pronouns}</div>
             <div class="spacer"></div>
             <div class="address">901 12th Avenue, Seattle, WA 98122-1090</div>
-            <div class="phone">Office: (206) 296-${phone} | <a href="mailto:${email}">${email}</a></div>
+            <div class="phone">Office: ${phone} | <a href="mailto:${email}">${email}</a></div>
         </div>
     `;
 
