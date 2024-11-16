@@ -62,8 +62,11 @@ button:hover {
 
 .signature .name-title {
     font-size: 12px;
-    font-weight: bold;
     color: black;
+}
+
+.signature .name-title .name {
+    font-weight: bold;
 }
 
 .signature .department {
