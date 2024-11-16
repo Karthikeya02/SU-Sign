@@ -84,6 +84,5 @@ button:hover {
 }
 
 .signature .spacer {
-    font-size: 6.5px;
-    line-height: 6.5px;
+    margin-top: 6.5px;
 }
