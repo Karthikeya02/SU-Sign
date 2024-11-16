@@ -2,12 +2,24 @@ body {
     font-family: 'Roboto Slab', serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('SU.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(10px); /* Gaussian blur */
+    z-index: -1;
 }
 
 .container {
@@ -15,10 +27,12 @@ body {
     flex-direction: row;
     width: 100%;
     max-width: 1200px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
 }
 
 .left-column {
