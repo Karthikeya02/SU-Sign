@@ -31,4 +31,17 @@ function generateSignature() {
     `;
 
     document.getElementById('signature-output').innerHTML = signatureHTML;
+    document.getElementById('copy-button').style.display = 'inline-block';
+    document.getElementById('copy-success').style.display = 'none';
+}
+
+function copySignature() {
+    const signature = document.getElementById('signature-output').innerHTML;
+    const tempInput = document.createElement('textarea');
+    tempInput.value = signature;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+    document.getElementById('copy-success').style.display = 'inline';
 }

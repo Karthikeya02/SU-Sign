@@ -32,6 +32,10 @@
             <button type="button" onclick="generateSignature()">Generate Signature</button>
         </form>
         <div id="signature-output"></div>
+        <div>
+            <button id="copy-button" onclick="copySignature()" style="display: none;">Copy</button>
+            <span id="copy-success" style="display: none; color: green; margin-left: 10px;">✔</span>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
