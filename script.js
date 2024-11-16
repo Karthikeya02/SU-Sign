@@ -7,7 +7,7 @@ function generateSignature() {
 
     const signatureHTML = `
         <div class="signature">
-            <div class="name-title">${name} | ${title}</div>
+            <div class="name-title"><span class="name">${name}</span> | ${title}</div>
             <div class="department">${department} | SEATTLE UNIVERSITY</div>
             <div class="pronouns">${pronouns}</div>
             <div class="spacer"></div>
