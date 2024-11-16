@@ -23,12 +23,19 @@
             <label for="pronouns">Pronouns:</label>
             <input type="text" id="pronouns" required>
             
-            <label for="phone">Phone (last 4 digits):</label>
-            <input type="text" id="phone" required>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" oninput="formatPhoneNumber(this)">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
             
             <button type="button" onclick="generateSignature()">Generate Signature</button>
         </form>
         <div id="signature-output"></div>
+        <div>
+            <button id="copy-button" onclick="copySignature()" style="display: none;">Copy</button>
+            <span id="copy-success" style="display: none; color: green; margin-left: 10px;">✔</span>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
