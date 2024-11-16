@@ -10,9 +10,8 @@ function generateSignature() {
             <div class="name-title">${name} | ${title}</div>
             <div class="department">${department} | SEATTLE UNIVERSITY</div>
             <div class="pronouns">${pronouns}</div>
-            <div class="address">901 12th Avenue, Seattle, WA 98122-1090</div>
-            <div class="phone">Office: (206) 296-${phone}</div>
             <div class="spacer"></div>
+            <div class="address">901 12th Avenue, Seattle, WA 98122-1090</div>
             <div class="phone">Office: (206) 296-${phone}</div>
         </div>
     `;

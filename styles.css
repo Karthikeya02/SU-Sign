@@ -57,7 +57,7 @@ button:hover {
 }
 
 .signature {
-    font-family: 'Roboto Slab', serif;
+    font-family: Arial, sans-serif;
 }
 
 .signature .name-title {
@@ -72,7 +72,11 @@ button:hover {
     color: rgb(170, 0, 0);
 }
 
-.signature .pronouns,
+.signature .pronouns {
+    font-size: 10px;
+    color: black;
+}
+
 .signature .address,
 .signature .phone {
     font-size: 10px;
@@ -81,4 +85,5 @@ button:hover {
 
 .signature .spacer {
     font-size: 6.5px;
+    line-height: 6.5px;
 }
