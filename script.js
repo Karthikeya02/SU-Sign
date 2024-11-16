@@ -22,7 +22,7 @@ function generateSignature() {
     const signatureHTML = `
         <div class="signature">
             <div class="name-title"><span class="name">${name}</span> | ${title}</div>
-            <div class="department">${department} | SEATTLE UNIVERSITY</div>
+            <div class="department">${department.toUpperCase()} | SEATTLE UNIVERSITY</div>
             <div class="pronouns">${pronouns}</div>
             <div class="spacer"></div>
             <div class="address">901 12th Avenue, Seattle, WA 98122-1090</div>

@@ -6,35 +6,41 @@
     <title>SU Sign</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://am-prod-client-files.ppub-tmaws.io/seattleu/s3fs-public/SU-Interlock-CMYK-Registered_1.png" type="image/png">
 </head>
 <body>
     <div class="container">
-        <h1>SU Sign</h1>
-        <form id="signature-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            
-            <label for="title">Title:</label>
-            <input type="text" id="title" required>
-            
-            <label for="department">Department:</label>
-            <input type="text" id="department" required>
-            
-            <label for="pronouns">Pronouns:</label>
-            <input type="text" id="pronouns" required>
-            
-            <label for="phone">Phone:</label>
-            <input type="text" id="phone" oninput="formatPhoneNumber(this)">
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            
-            <button type="button" onclick="generateSignature()">Generate Signature</button>
-        </form>
-        <div id="signature-output"></div>
-        <div>
-            <button id="copy-button" onclick="copySignature()" style="display: none;">Copy</button>
-            <span id="copy-success" style="display: none; color: green; margin-left: 10px;">✔</span>
+        <div class="left-column">
+            <h1>SU Sign</h1>
+            <p>Use this page to generate a professional email signature for Seattle University. Fill in the fields below and click "Generate Signature" to create your custom signature.</p>
+            <form id="signature-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="title">Title:</label>
+                <input type="text" id="title" required>
+                
+                <label for="department">Department:</label>
+                <input type="text" id="department" required>
+                
+                <label for="pronouns">Pronouns:</label>
+                <input type="text" id="pronouns" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" oninput="formatPhoneNumber(this)">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <button type="button" onclick="generateSignature()">Generate Signature</button>
+            </form>
+        </div>
+        <div class="right-column">
+            <div id="signature-output"></div>
+            <div>
+                <button id="copy-button" onclick="copySignature()" style="display: none;">Copy</button>
+                <span id="copy-success" style="display: none; color: green; margin-left: 10px;">✔</span>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

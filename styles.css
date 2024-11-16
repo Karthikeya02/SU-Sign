@@ -1,21 +1,43 @@
 body {
     font-family: 'Roboto Slab', serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
     background: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.left-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-column {
+    flex: 0 0 400px; /* Fixed width for the output box */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
     text-align: center;
+    color: #aa0000; /* Primary color */
 }
 
 form {
@@ -54,6 +76,7 @@ button:hover {
     background: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 4px;
+    width: 100%;
 }
 
 .signature {
@@ -81,7 +104,7 @@ button:hover {
 }
 
 .signature .address,
-.signature .phone {
+.signature .contact {
     font-size: 10px;
     color: black;
 }
