@@ -1,3 +1,11 @@
+function formatPhoneNumber(input) {
+    const phone = input.value.replace(/\D/g, '');
+    const match = phone.match(/^(\d{3})(\d{3})(\d{4})$/);
+    if (match) {
+        input.value = `(${match[1]}) ${match[2]}-${match[3]}`;
+    }
+}
+
 function generateSignature() {
     const name = document.getElementById('name').value;
     const title = document.getElementById('title').value;
